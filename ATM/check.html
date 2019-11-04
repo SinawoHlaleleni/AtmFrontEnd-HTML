@@ -1,0 +1,17 @@
+
+<form action="PayslipServlet" method="get" style="text-align:center; background-color:powderblue;">
+<h1> Check Account</h1>
+         <p>CheckNo:  <input type="text" name="lname" id="lname" value=""></p>
+          <p>Amount:   <input type="text" name="fname" id="zname" value="R"></p>
+          
+          
+          <input type="button" value="Submit" onClick="pr()">  
+		  <p>
+		  <span id="result"></span></p>
+        </form>
+
+        <script>
+          function pr() {
+            document.getElementById("result").innerHTML = document.getElementById('lname').value + "<br>" + document.getElementById('zname').value;
+          }
+        </script>

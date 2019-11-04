@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+</script> 
+
+	<script> 
+		$(document).ready(function() { 
+
+			$("button").click(function() { 
+				
+			//here the value is stored in variable. 
+				var x = $("input:text").val(); 
+				var y = $("input:text").val();
+
+				document.getElementById("demo").innerHTML = x; 
+				document.getElementById("war").innerHTML = y;
+			}); 
+
+		}); 
+	</script> 
+
+</head> 
+
+<body style="text-align:center;"> 
+
+	<h1>Check Account</h1>  
+    <p>CheckNo:<input type="text" name="CheckNo" value="" id="demo"></p>
+	<h4>Amount:<input type="text" name="Amount" value="R" id="war"></h4>
+ 
+	<button>submit </button> 
+
+	<p id="demo"></p> 
+	<h4 id="war"></h4>
+</body> 
+
+</html> 

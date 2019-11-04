@@ -1,0 +1,15 @@
+
+<form action="PayslipServlet" method="get" style="text-align:center; background-color:#F6DDCC;">
+<h1> Savings Account</h1>
+         <p> SavingsNo:    <input type="text" name="lname" id="lname"></p>
+          <p>Amount:   <input type="text" name="fname" id="zname" value="R"></p>
+          <span id="result"></span>
+          <br>
+          <input type="button" value="Submit" onClick="pr()">
+        </form>  
+
+        <script>
+          function pr() {
+            document.getElementById("result").innerHTML = document.getElementById('lname').value + "<br>" + document.getElementById('zname').value;
+          }
+        </script>
